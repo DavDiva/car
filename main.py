@@ -14,7 +14,7 @@ clock = pygame.time.Clock()
 draw_tool = pygame.draw
 
 
-cars = [Car([100, 100], 3.14/4) for _ in range(10)]
+cars = [Car([200, 200], 3.14/4) for _ in range(10)]
 
 
 running = True

@@ -11,7 +11,7 @@ class Car:
         self.angle += 0.01
 
     def draw(self, draw_tool, display):
-        gipotenuse = sqrt(self.position[0] * self.position[0] + self.position[1] * self.position[1])
+        gipotenuse = sqrt(car_sizes[0] * car_sizes[0] + car_sizes[1] * car_sizes[1])
         angle_between = atan2(car_sizes[1], car_sizes[0])
         draw_tool.lines(display, car_color, True,
                         [[self.position[0] + gipotenuse*cos(angle_between + self.angle),
